@@ -1,0 +1,205 @@
+.container{
+  /* 
+  background-color: aqua;
+  padding: 1cm;
+  width: 30%; */
+  margin: 10px;
+}
+body{
+  margin: 10px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+.c1,.c2{
+  /* background-color: rgb(230, 241, 241); */
+  height: auto;
+  flex: 1;
+  position: relative;
+  max-width: 560px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* align-items: center; */
+  align-content: center;
+
+}
+.c1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-10%, -50%); */
+  z-index: 1;  /*Ensure c1 is in front of c2 */
+}
+/* img{
+  width: 100%;
+} */
+
+.paragraph,.title{
+  text-align: center;
+  /* margin-top: -20px; */
+
+}
+
+.paragraph{
+  text-align: center;
+  /* padding: 10px; */
+  font-size: 17px;
+
+}
+.start,.more{
+  background-color: blue;
+  color: white;
+  height: 35px;
+  width: 4cm;
+  border-radius: 5px;
+  align-items:center;
+  border: 0cap;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.start span,.more span {
+  padding: 10px;
+}
+.morex{
+  background-color: blue;
+  color: rgb(252, 252, 253);
+  border:1px solid blue;
+  width: 8cm;
+  margin-top: 1cm;
+  border-radius: 4px;
+  border-radius: 4px;
+  
+}
+.buttons{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+ 
+}
+
+/* Optional: Add some styling to the buttons */
+.buttons button {
+  margin: 5px;
+  padding: 10px;
+}
+
+
+.features {
+  /* background-color: rgb(238, 238, 238); */
+  
+  display: flex;
+}
+.features .textx,.features .picx{
+  /* background-color: rgb(230, 241, 241); */
+  height: auto;
+  flex: 1;
+  position: relative;
+  max-width: 350px;
+  /* margin: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-left: 20px; */
+  /* align-items: center; */
+  align-content: center;
+
+}
+.features .textx{
+   background-color: rgb(230, 241, 241);
+   /* border-radius: 10px; */
+   /* margin: -5px; */
+
+}
+.more{
+  background-color: white;
+  color: blue;
+  border:1px solid blue;
+}
+.features .textx .title{
+  text-align: center;
+  padding-left: 20%;
+  padding-bottom: 10px;
+  color: rgb(135, 132, 132);
+
+}
+.features .textx .ps{
+  padding: 0.5cm;
+  margin-top: -1cm;
+}
+.features .f1{
+  border-radius: 0px;
+}
+.row{
+  margin-bottom: 1cm;
+}
+.f1{
+  height: 100%;
+}
+
+.footer{
+  background-color: rgb(230, 241, 241);
+}
+input{
+  width: 8cm;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 28px;
+  border: 0cap;
+}
+span{
+  margin-left: 15px;
+  padding: 2px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.bana{
+  background-color: rgb(25, 69, 54);
+  height: 3cm;
+  width: 3cm;
+  border-radius: 100%;
+  margin-top: 1cm;
+}
+
+@media (max-width:620px){
+  .c1,.c2,.features .textx , .features .picx{
+    flex: 100%;
+    width: 100%;
+  }
+  .features .textx , .features .picx{
+    flex: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  .features{
+    /* border-radius: 10px; */
+    margin-top: 2cm;
+  }
+  
+
+  .f1{
+    display: none;
+  }
+input{
+  width: 100%;
+}
+  .features .textx{
+    background-color: rgb(230, 241, 241);
+    border-radius: 10px;
+    /* width: 100%; */
+ 
+ }
+
+}
